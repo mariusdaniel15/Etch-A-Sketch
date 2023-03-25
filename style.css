@@ -1,0 +1,21 @@
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    max-width:1000px;
+}
+
+.square{
+    display:flex;
+    border-style: solid;
+    flex-wrap:wrap;
+    flex:1 0 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.mini{
+    display:flex;
+    border-style: solid;
+    border-color:blue;
+    flex:1 0 50px;
+}
