@@ -14,3 +14,13 @@ for(let i=1;i<=16;i++){
 container.appendChild(square);
 
 }
+
+const minis = document.querySelectorAll('.mini');
+minis.forEach(mini => {
+    mini.addEventListener('mouseover', () => {
+        mini.style.backgroundColor = 'red';
+    });
+});
+
+const btn = document.createElement('btn');
+btn.classList.add('btn');

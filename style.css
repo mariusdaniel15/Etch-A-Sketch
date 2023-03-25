@@ -1,21 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:880px;
+    background-color:antiquewhite;
+}
 .container {
     display:flex;
     flex-wrap: wrap;
-    max-width:1000px;
+    max-width:960px;
+    gap:5px;
 }
 
 .square{
     display:flex;
-    border-style: solid;
     flex-wrap:wrap;
     flex:1 0 200px;
+    gap:5px;
     height: 200px;
-    margin: 10px;
 }
 
 .mini{
     display:flex;
     border-style: solid;
-    border-color:blue;
-    flex:1 0 50px;
+    flex:1 0 40px;
 }
