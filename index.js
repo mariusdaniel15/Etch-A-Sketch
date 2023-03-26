@@ -17,14 +17,17 @@ function grid(number){
 
     content.appendChild(square);
     }
+}
 
+function colorGrid(color){
     const minis = document.querySelectorAll('.mini');
     minis.forEach(mini => {
         mini.addEventListener('mouseover', () => {
-            mini.style.backgroundColor = 'red';
+            mini.style.backgroundColor = `${color}`;
         });
     });
 }
+
 
 //the menu
 const menu = document.querySelector('.menu');
@@ -59,6 +62,28 @@ menu.appendChild(btn4);
 
 //btn functions
 btn1.addEventListener('click', () => {
-  let input = inputNum.value;
+  let input = Number(inputNum.value);
+  while (content.firstChild){
+    content.removeChild(content.firstChild);
+  }
   grid(input);
+});
+
+btn2.addEventListener('click', () => colorGrid('black'));
+
+const colors = ['violet', 'indigo','blue','green','yellow','orange','red'];
+let colorIndex = 0;
+btn3.addEventListener('click', () => {
+   setInterval(() => {
+    colorGrid(colors[colorIndex]);
+    colorIndex = (colorIndex + 1) % colors.length;
+   }, 1000);
+});
+
+btn4.addEventListener('click', () => {
+    const minis = document.querySelectorAll('.mini');
+    minis.forEach(mini => {addEventListener
+      mini.style.backgroundColor = 'white'; 
+    });
+    inputNum.value = '';
 });

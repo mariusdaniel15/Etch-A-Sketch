@@ -6,9 +6,10 @@ body{
 }
 
 .container{
+    padding-top: 100px;
     display:flex;
     align-items:center;
-    gap: 50px;
+    gap: 150px;
 }
 
 /* menu */
@@ -18,11 +19,18 @@ body{
     justify-content: center;
     flex-direction: column;
     gap:40px;
+    max-width:250px;
+}
+
+img{
+  height: 200px;
+  max-width: 200px;
 }
 
 h1{
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .introduce{
@@ -30,51 +38,56 @@ h1{
   gap:5px;
 }
 
-.inputNum[type=number] {
-  background-color: antiquewhite;
-  width: 10%;
+.inputNum {
+  width: 150px;
 }
 
 .btn1{
     background-color:antiquewhite;
     color: black;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 2px;
-    padding: 4px 8px;
+    padding: 2px 6px;
+    cursor:pointer;
   }
 
 .btn2{
   background-color: black;
   color: antiquewhite;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 2px;
+  padding: 2px 6px;
+  cursor:pointer;
 }
 
 .btn3{
-  background:linear-gradient(red,orange,yellow,darkgreen,darkblue);
-  border: 2px solid black;
+  background-image:linear-gradient(90deg, rgba(40,27,27,1) 0%, rgba(184,33,10,1) 35%, rgba(231,146,15,1) 43%, rgba(217,192,16,1) 51%, rgba(79,218,23,1) 59%, rgba(34,76,143,1) 67%, rgba(107,22,186,1) 75%, rgba(41,32,46,1) 100%);
+  border: 1px solid black;
   border-radius: 2px;
+  padding: 2px 6px;
+  cursor:pointer;
 }
 
 .btn4{
   background-color:antiquewhite;
   color:black;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 2px;
-  padding: 4px 8px;
-
+  padding: 2px 6px;
+  cursor:pointer;
 }
 
 /* grid */
 
 .content {
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height:800px;
-    width: 800px;
-    margin-top:25px;
-    border: 2px solid black;
+    height:600px;
+    width: 600px;
+    margin-top:50px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
   
 .square {
@@ -84,6 +97,5 @@ h1{
   
 .mini {
     display: flex;
-    border: 1px solid black;
     flex: 1;
 }
