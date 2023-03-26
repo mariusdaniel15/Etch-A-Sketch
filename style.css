@@ -2,26 +2,88 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:880px;
     background-color:antiquewhite;
 }
-.container {
+
+.container{
     display:flex;
+    align-items:center;
+    gap: 50px;
+}
+
+/* menu */
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:40px;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+.introduce{
+  display:flex;
+  gap:5px;
+}
+
+.inputNum[type=number] {
+  background-color: antiquewhite;
+  width: 10%;
+}
+
+.btn1{
+    background-color:antiquewhite;
+    color: black;
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 4px 8px;
+  }
+
+.btn2{
+  background-color: black;
+  color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.btn3{
+  background:linear-gradient(red,orange,yellow,darkgreen,darkblue);
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.btn4{
+  background-color:antiquewhite;
+  color:black;
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 4px 8px;
+
+}
+
+/* grid */
+
+.content {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    max-width:960px;
-    gap:5px;
+    height:800px;
+    width: 800px;
+    margin-top:25px;
+    border: 2px solid black;
 }
-
-.square{
-    display:flex;
-    flex-wrap:wrap;
-    flex:1 0 200px;
-    gap:5px;
-    height: 200px;
+  
+.square {
+    display: flex;
+    flex: 1;
 }
-
-.mini{
-    display:flex;
-    border-style: solid;
-    flex:1 0 40px;
+  
+.mini {
+    display: flex;
+    border: 1px solid black;
+    flex: 1;
 }
